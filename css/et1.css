@@ -18,7 +18,7 @@ header{
 }
 footer{
     width: 100%;
-    height: 120px;
+    height: 138px;
     background-color: rgb(48, 208, 244);
 }
 span{
@@ -45,4 +45,7 @@ td{
 table{
     margin-top: 20px;
     margin-left: 20px ;
+}
+body{
+    margin: 0;
 }

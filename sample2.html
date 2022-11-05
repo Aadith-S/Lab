@@ -14,21 +14,25 @@
 </head>
 
 <body>
-    <ul class="">
-        <li class="" onclick="linkclick();">HELOOOO</li>
-        <li class="" onclick="linkclick();">HELOOOO</li>
-        <li class="" onclick="linkclick();">HELOOOO</li>
-        <li class="" onclick="linkclick();">HELOOOO</li>
-        <li class="" onclick="linkclick();">HELOOOO</li>
+    <a href="A" onclick="addlist(event);">CLick Me</a>
+    <a href="B" onclick="addlist(event);">CLick Me</a>
+    <a href="C" onclick="addlist(event);">CLick Me</a>
+    <a href="D" onclick="addlist(event);">CLick Me</a>
+    <a href="E" onclick="addlist(event);">CLick Me</a>
+    <ul class="list-group">
+
     </ul>
     <script>
         var ul = document.querySelector("ul");
-        var li = document.querySelectorAll("li");
-        function linkclick(){
-            ul.classList.add("list-group");
-            li.forEach(e=>{
-                e.classList.add("list-group-item");
-            })
+        function addlist(e){
+            e.preventDefault();
+            console.log(e.target.href);
+            listli(e.target.href);
+        }
+        function listli(liele)
+        {
+            var li = `<li class="list-group-item">${liele}</li>`
+            ul.innerHTML += li;
         }
     </script>
   <!-- Bootstrap JavaScript Libraries -->

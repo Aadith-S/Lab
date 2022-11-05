@@ -1,0 +1,70 @@
+.nav{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+}
+.nav span{
+    background-color: red;
+    color: white ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 50px;
+}
+.onames{
+    display: none;
+    width: 200px;
+    height: 800px;
+    position: absolute;
+    background-color: grey;
+    color: black;
+    margin-top: -5px;
+}
+.others{ 
+    position: absolute;
+    height: 80px;
+    border-radius: 50%;
+}
+.others:hover .onames{
+    display: block;
+}
+.others img{
+    margin: 6px;
+}
+.logoname{
+    margin: -25px 10px 10px 10px;
+    display: inline-block;  
+}
+.loname{
+    margin: 0px 0px 0px 50px;
+}
+.search{
+    display: inline-block;
+    margin-left: 80px;
+}
+.search input{
+    padding: 3px;
+    background-color: grey;
+    border: 1px solid grey;
+    width: 250px;
+}
+.search button{
+    padding: 0px 10px 3px 10px;
+    background-color: black;
+    border: 1px solid grey;
+}
+body{
+    margin: 0px;
+}
+.contentbox{
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+}
+.vids{
+    width: 500px;
+}
+.video{
+    display: inline-flex;
+}
